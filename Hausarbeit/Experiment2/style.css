@@ -1,0 +1,784 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: grey;
+}
+
+.item1 {
+    background-color: ghostwhite;
+
+
+    grid-area: item1;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+
+}
+
+.item2 {
+    background-color: ghostwhite;
+    grid-area: item2;
+
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+
+.item3{
+    background-color: ghostwhite;
+
+    grid-area: item3;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+.item4 {
+    background-color: ghostwhite;
+    grid-area: item4;
+
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+
+.item5 {
+    background-color: ghostwhite;
+    grid-area: item5;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+
+}
+
+
+.item1:hover {
+    -webkit-animation: 0;
+    transform: scale(0.9);
+}
+
+.item2:hover {
+    -webkit-animation: 0;
+    transform: scale(0.9);
+}
+
+.item3:hover {
+    -webkit-animation: 0;
+    transform: scale(0.9);
+}
+
+.item4:hover {
+    -webkit-animation: 0;
+    transform: scale(0.9);
+}
+
+.item5:hover {
+    -webkit-animation: 0;
+    transform: scale(0.9);
+}
+
+.gridcontainer {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    grid-template-columns: 29% 11% 14% 17% 24%;
+    grid-template-rows: 29% 11% 14% 17% 24%;
+
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+overflow: hidden;
+
+
+
+}
+
+h1{
+    text-align: center;
+
+    margin: auto;
+    vertical-align:middle;
+
+    transition: all 0.5s ease-out;
+
+
+
+}
+
+
+.image {
+    float: right;
+    float: top;
+    max-height: 100%;
+    max-width: 100%;
+    transition: all 0.5s ease-out;
+}
+
+
+@media screen and (min-width:300px) {
+
+    .gridcontainer {
+
+        grid-template-areas:
+                "item1 item1 item1 item1 item1"
+                "item2 item2 item2 item2 item2"
+                "item3 item3 item3 item3 item3"
+                "item4 item4 item4 item4 item4"
+                "item5 item5 item5 item5 item5";
+
+        -webkit-animation: fadeonresize1 0.6s ease-in-out;
+    }
+
+    p{
+        -webkit-animation:  horizontalonresize8 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize8 0.6s ease-in-out;
+    }
+    .image{
+        -webkit-animation:  horizontalonresize8 0.6s ease-in-out;
+    }
+
+    .item1{
+        -webkit-animation: 0;
+    }
+    .item2{
+        -webkit-animation: 0;
+    }
+    .item3{
+        -webkit-animation: 0;
+    }
+    .item4{
+        -webkit-animation: 0;
+    }
+    .item5{
+        -webkit-animation: 0;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:700px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item1 item1 item3 item2 item2"
+                "item1 item1 item3 item2 item2"
+                ". . item3 . ."
+                ". . item4 . ."
+                "item5 item5 item4 . .";
+
+        -webkit-animation: fadeonresize2 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: left;
+        float: top;
+        -webkit-animation:  horizontalonresize7 0.6s ease-in-out;
+
+    }
+
+    p{
+        font-family: "Arial Black";
+        -webkit-animation:  horizontalonresize7 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize7 0.6s ease-in-out;
+    }
+
+
+    .item1{
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+
+    }
+    .item2{
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+
+    }
+    .item3{
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+
+    }
+    .item4{
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+
+    }
+    .item5{
+        -    -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+
+    }
+
+
+}
+
+
+@media screen and (min-width:800px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item5 item5 . item3 ."
+                "item5 item5 . item3 item1"
+                ". . . . ."
+                ". . item4 item4 item2"
+                ". . . . item2";
+        -webkit-animation: fadeonresize3 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation:  horizontalonresize6 0.6s ease-in-out;
+    }
+
+    p{
+        font-family: "monospace";
+        -webkit-animation:  horizontalonresize6 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize6 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:900px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item5 . . item3 item1"
+                "item5 . . item3 item1"
+                "item5 . . . ."
+                ". item4 . item2 ."
+                ". item4 . item2 .";
+        -webkit-animation: fadeonresize5 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: left;
+        float: bottom;
+        -webkit-animation:  horizontalonresize5 0.6s ease-in-out;
+
+    }
+
+    p{
+        font-family: "monospace";
+        -webkit-animation:  horizontalonresize5 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize5 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                ". item5 . item3 ."
+                ". item5 . item3 item1"
+                ". . . . item1"
+                ". . . item4 item2"
+                ". . . item4 item2";
+        -webkit-animation: fadeonresize5 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: top;
+        -webkit-animation:  horizontalonresize4 0.6s ease-in-out;
+    }
+
+    p{
+        font-family: "monospace";
+        -webkit-animation:  horizontalonresize4 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize4 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                ". item5 . item3 ."
+                ". item5 . item3 item1"
+                ". . . . item1"
+                ". . . item4 item2"
+                ". . . item4 item2";
+        -webkit-animation: fadeonresize6 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: top;
+        -webkit-animation:  horizontalonresize3 0.6s ease-in-out;
+    }
+
+    p{
+        font-size: 5vmin;
+        font-family: "monospace";
+        -webkit-animation:  horizontalonresize3 0.6s ease-in-out;
+    }
+
+    h1{
+        font-size: 10vmin;
+        -webkit-animation:  horizontalonresize3 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                ". item5 item5 item3  item3"
+                ". item5 item5 item3  item3"
+                ". . . . ."
+                "item1 . . item2 item2"
+                ". . . item2 item2";
+        -webkit-animation: fadeonresize7 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: top;
+        -webkit-animation:  horizontalonresize2 0.6s ease-in-out;
+    }
+
+    p{
+        font-family: "monospace";
+        -webkit-animation:  horizontalonresize2 0.6s ease-in-out;
+    }
+
+    h1{
+        -webkit-animation:  horizontalonresize2 0.6s ease-in-out;
+        font-size: 8vmin;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (min-width:1300px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                ". . item3 item3  item3"
+                "item5 item5 item5 . ."
+                "item4 item1 item1 . ."
+                "item4 . . . ."
+                "item4 item2 item2 item2 item2";
+        -webkit-animation: fadeonresize8 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: top;
+        -webkit-animation:  horizontalonresize1 0.6s ease-in-out;
+    }
+
+    p{
+        font-family: "sans-serif";
+        -webkit-animation:  horizontalonresize1 0.6s ease-in-out;
+
+    }
+
+    h1{
+        -webkit-animation: horizontalonresize1 0.6s ease-in-out;
+        font-size: 10vmin;
+    }
+
+    .item4 p{
+        writing-mode: vertical-rl;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width:1400px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item1 item2 item3 item4 item5"
+                "item1 item2 item3 item4 item5"
+                "item1 item2 item3 item4 item5"
+                "item1 item2 item3 item4 item5"
+                "item1 item2 item3 item4 item5";
+        -webkit-animation: fadeonresize9 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: left;
+        float: bottom;
+        -webkit-animation: verticalonresize3 0.6s ease-in-out;
+    }
+
+    p{
+        writing-mode: vertical-rl;
+        font-family: "fantasy";
+        -webkit-animation: verticalonresize3 0.6s ease-in-out;
+    }
+
+    h1{
+        writing-mode: vertical-rl;
+        font-family: "fantasy";
+        -webkit-animation: verticalonresize3 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:1500px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item1 . item3 . item5"
+                "item1 . item3 . item5"
+                "item1 item2 item3 item4 item5"
+                ". item2 . item4 ."
+                ". item2 . item4 .";
+
+        -webkit-animation: fadeonresize10 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation: verticalonresize2 0.6s ease-in-out;
+
+    }
+
+    p{
+        writing-mode: vertical-rl;
+        font-family: "Helvetica Rounded";
+        -webkit-animation: verticalonresize2 0.6s ease-in-out;
+
+    }
+
+    h1{
+transform: translateY(-50%);
+        writing-mode: vertical-rl;
+        font-family: "Helvetica Rounded";
+        -webkit-animation: verticalonresize2 0.6s ease-in-out;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 1600px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item2 item5 item5 . ."
+                "item2 item5 item5 . ."
+                "item2 item1 . . ."
+                ". item3 . item4 ."
+                ". item3 . item4 .";
+
+        -webkit-animation: fadeonresize10 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation: verticalonresize1 0.6s ease-in-out;
+
+    }
+
+    p{
+        -webkit-animation: verticalonresize1 0.6s ease-in-out;
+        writing-mode: vertical-rl;
+        font-family: "Helvetica Rounded";
+
+    }
+
+    h1{
+        -webkit-animation: verticalonresize1 0.6s ease-in-out;
+        transform: translateY(0%);
+        writing-mode: horizontal-tb;
+        font-family: "Helvetica Rounded";
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 1700px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item2 item2 item1 . ."
+                "item2 item2 . item5 ."
+                ". . . item5 ."
+                "item4 item3 item3 item5 ."
+                "item4 item3 item3 . .";
+
+        -webkit-animation: fadeonresize10 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation: verticalonresize4 0.6s ease-in-out;
+
+    }
+
+    p{
+        -webkit-animation: verticalonresize4 0.6s ease-in-out;
+        writing-mode: vertical-rl;
+        font-family: "Helvetica Rounded";
+
+    }
+
+    h1{
+        -webkit-animation: verticalonresize4 0.6s ease-in-out;
+        transform: translateY(0%);
+        writing-mode: horizontal-tb;
+        font-family: "Helvetica Rounded";
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 1800px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                ". . item1 . item5"
+                "item4 . . . item5"
+                "item4 . . . ."
+                "item4 . item3 . item2"
+                "item4 . item3 . item2";
+
+        -webkit-animation: fadeonresize10 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation: verticalonresize5 0.6s ease-in-out;
+
+    }
+
+    p{
+        -webkit-animation: verticalonresize5 0.6s ease-in-out;
+        writing-mode: vertical-rl;
+        font-family: "Helvetica Rounded";
+
+    }
+
+    h1{
+        -webkit-animation: verticalonresize5 0.6s ease-in-out;
+        transform: translateY(0%);
+        writing-mode: horizontal-tb;
+        font-family: "Helvetica Rounded";
+    }
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 1900px) {
+    .gridcontainer {
+
+
+        grid-template-areas:
+                "item4 . . item5 item5"
+                "item4 . . item5 item5"
+                "item4 item1 item1 . ."
+                "item4 item1 item1 item2 item2"
+                "item4 item3 item3 item2 item2";
+
+        -webkit-animation: fadeonresize10 0.6s ease-in-out;
+    }
+    .image {
+        transition: ease all .5s;
+
+        float: right;
+        float: bottom;
+        -webkit-animation: verticalonresize6 0.6s ease-in-out;
+
+    }
+
+    p{
+        -webkit-animation: verticalonresize6 0.6s ease-in-out;
+        writing-mode: vertical-rl;
+        font-family: "Bernard MT Condensed"
+
+    }
+
+    h1{
+        -webkit-animation: verticalonresize6 0.6s ease-in-out;
+        transform: translateY(0%);
+        writing-mode: horizontal-tb;
+        font-family: "Bernard MT Condensed"
+    }
+
+    .item4 p{
+        writing-mode: vertical-rl;
+        float: right;
+    }
+
+    .item3 p{
+        writing-mode: horizontal-tb;
+    }
+
+    .item2 p{
+        writing-mode: horizontal-tb;
+    }
+
+
+
+
+}
+
+
+
+@-webkit-keyframes fadeonresize1 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize2 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize3 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize4 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize5 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize6 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize7 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize8 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize9 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize10 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize11 { from { opacity: 0; } to { opacity: 1; }}
+@-webkit-keyframes fadeonresize12 { from { opacity: 0; } to { opacity: 1; }}
+
+
+
+@-webkit-keyframes verticalonresize1{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize2{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize3{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize4{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize5{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize6{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize7{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+@-webkit-keyframes verticalonresize8{ from {     transform: translateY(100%); } to { transform: translateY(0%); }}
+
+@-webkit-keyframes horizontalonresize1{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize2{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize3{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize4{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize5{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize6{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize7{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+@-webkit-keyframes horizontalonresize8{ from {     transform: translateX(100%); } to { transform: translateX(0%); }}
+
+
+@-webkit-keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translatey(-20px);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+
+
+
+

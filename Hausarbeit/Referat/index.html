@@ -1,0 +1,79 @@
+<html>
+<title>Generative Gestaltung in Javascript</title>
+
+    <head>
+        <link rel="stylesheet" href="style-index.css">
+
+    </head>
+    <body>
+            <script src="processing\processing.js"></script> 
+            <canvas resize stats hidpi="off" data-processing-sources="processing\gengestHeader\gengestHeader.pde" id="bgCanvas"></canvas>
+            <div class="content">
+                    <h1>Generative Gestaltung im Browser</h1>
+                    <p>Finn Bossen, Jonas Mumm</p>
+<h1>Processing.js</h1>
+<ul>
+    <li>
+        <a href="processing/processingExample.html">Processing Beispiel</a>
+    </li>
+    <li>
+        <a href="processing/canvasScalled.html">Skaliertes Beispiel</a>
+    </li>
+    <li>
+        <a href="processing/GenGestHeader.html">Processing als Background</a>
+    </li>
+</ul>
+<h1>Paper.js</h1>
+<ul>
+    <li>
+        <a href="paper/animatedStarExample.html">Paper.js Beispiel</a>
+    </li>
+    </ul>
+<h1>Three.js</h1>
+<ul>
+    <li>
+        <a href="three/threetest/index.html">Test Three.js</a>
+    </li>
+</ul>
+
+<h1>
+    Sonstige Themen
+</h1>
+<br>
+<br>
+<br>
+<br>
+<h2>
+Same-origin policy im Browser
+</h2>
+<ul class="cooleListe">
+        <li>
+            Schränkt Requests an andere Domains als aktuelle Domain ein
+        </li>
+        <li>
+            Sicherheitsmassnahme aktueller Browser
+        </li>
+        <li>
+            Bezug generative Gestaltung: Verhindert das Laden von Ressourcen von anderen Domains innerhalb von Scripten (Processing, Three.js, Paper.js) bei der Nutzung von z.b. Open Data.
+        </li>
+    <li>
+Umgehen via <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> oder Umleitung und Weiterleitung der Request über eigenen Server (innerhalb des geladenen Domains)</a>
+    </li>
+</ul>
+<br>
+<h2>
+Audio im Browser
+</h2>
+<ul class="cooleListe">
+        <li>
+            Moderne Browser verhindern das Abspielen von Audio ohne Userinput
+        </li>
+        <li>
+                Canvas Elemente müssen eine "Geste" (z.b. Klick) emfangen, bevor sie Audio abspielen dürfen
+            </li>
+            <li>
+                Implementation der Einschränkung Browserabhängig: Komplettes Verbot Audiowiedergabe zu starten bis Geste (Chrome, Opera, Safari) oder Stummschaltung (aber Wiedergabe) bis zur Aktivierung von Audio (Firefox, Edge, IE). → Audiowiedergabe im Canvas erst nach emfangen einer Geste starten, um das Starten der Wiedergabe zu garantieren. 
+            </li>
+        </div>
+</body>
+</html>

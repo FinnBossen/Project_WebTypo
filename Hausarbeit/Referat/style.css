@@ -1,0 +1,53 @@
+body{
+max-width: 60rem;
+padding: 2rem 1rem;
+margin: auto;
+background-color: rgb(255, 0, 170);
+font-family: Helvetica, Arial, sans-serif;
+font-size: 1.5em;
+}
+
+canvas {
+    margin: auto;
+}
+
+canvas[resize] {
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+.cooleListe{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    /*list-style-type:none;*/
+    line-height: 1.8;
+}
+
+.cooleListe>li{
+margin-bottom: 5px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    width: auto;
+    margin: 1rem auto;
+
+}
+
+.alert
+{
+    background-color: rgba(255, 255, 255, 0.527);
+    border-color: red;
+    border-width: 10px;
+    border-style: solid;
+    padding:20px;
+}
+

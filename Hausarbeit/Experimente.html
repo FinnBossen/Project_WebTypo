@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Title</title>
+
+    <script src="dependecies/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+<div class="NodeCanvas">
+
+    <div class="curtain__panel curtain__panel--left" id="curtainLeft">
+        <img id="InspectExperimentPicture" src="images/Experiment1.PNG" width="90%" height="auto">
+    </div>
+
+    <canvas id="NodeCanvasBackground"></canvas>
+
+    <div class="pinNode" id="firstNode">
+        <img src="images/pinClosed.png" class="pin">
+        <h2 class="ExperimentName">Experiment 1</h2>
+        <img src="images/Experiment1.PNG" class="PreviewPictureNode">
+    </div>
+
+    <div class="pinNode" id="secondNode">
+        <img src="images/pinClosed.png" class="pin">
+        <h2 class="ExperimentName">Experiment 2</h2>
+        <img src="images/Experiment2.PNG" class="PreviewPictureNode">
+    </div>
+
+    <div class="pinNode" id="thirdNode">
+        <img src="images/pinClosed.png" class="pin">
+        <h2 class="ExperimentName">Experiment 3</h2>
+        <img src="images/Experiment3.PNG" class="PreviewPictureNode">
+    </div>
+
+    <div class="pinNode" id="fourthNode">
+        <img src="images/pinClosed.png" class="pin">
+        <h2 class="ExperimentName">Experiment 4</h2>
+        <img src="images/Experiment4.PNG" class="PreviewPictureNode">
+    </div>
+
+    <div class="pinNode" id="fifthNode">
+        <img src="images/pinClosed.png" class="pin">
+        <h2 class="ExperimentName">Referat</h2>
+        <img src="images/Referat.PNG" class="PreviewPictureNode">
+    </div>
+
+    <div id="inspectZone">
+        <h1 id="InspectZoneDescription">Drag to Inspect</h1>
+    </div>
+
+    <div class="curtain__panel curtain__panel--right" id="curtainRight">
+        <h1 class="ExperimentNameInspetion" id="ExperimentNameInspetion"></h1>
+        <div class="Descriptions">
+            <div class="ExperimentDescription" id="Description">
+                <h2>Überlegung</h2>
+                <p>
+                    Für das erste Experiment sollten wir uns eine Vorlage anhand eines Plakates
+                    oder einer interessanten Website nehmen und dort versuchen ein interessantes Gimmick nachzustellen.
+
+                    Ich hatte mich für ein relativ simples Plakat entschieden was seine Schrift überlappen lässt.
+                    Desweiteren wollte ich es etwas interaktiv machen und habe mich ein wenig mit der library Paper.js
+                    für den
+                    Hintergund des Plakates beschäftigt.
+                </p>
+                <h2>Umsetzung</h2>
+                <p>
+                    Für die Umsetzung hab ich ein normales Grid verwendet das die verschiedenen Wörter anreiht.
+                    Dann habe ich sie manuell positioniert sodass die abstände passen.
+                    Damit er Überlap Effekt entsteht habe ich mehrere h1 als absolut in ein relatives parent div
+                    gesteckt.
+                    Die absoluten Objekte sind nun an der selben Stelle und müssen nur etwas verschoben werden um den
+                    gewünschten
+                    Effekt vom Plakat zu erreichen.
+                </p>
+                <p>
+                    Beim Hintergrund habe ich ein Canvas mit Paper.js erstellt. Dort habe ich zufällig Dreieke
+                    platziert,
+                    die immer zu einer anderen zufälligen Position hin animiert werden.
+                </p>
+            </div>
+            <div class="ExperimentDescription" id="Description2">
+
+                <h2>Überlegung</h2>
+                <p>
+                    Beim 2. Experiment war das Thema ein experimentelles Raster zu erstellen.
+                    Dafür sollten wir einen längeren Text verwenden.
+                    Ich habe einen Text auf der vorgeschlagenen Seite Projekt Gutenberg verwendet.
+                    Dort habe ich gleich den ersten vorgeschlagenen Text von Hans Fallada genommen.
+                </p>
+                <h2>Umsetzung</h2>
+                <p>
+                    In meinem Experiment habe ich am meisten Mediaqueries verwendet
+                    und die Fom des Rasters immer mit Grid Template Areas verändert.
+                    Das Raster habe ich mit den Grid Template Areas verändert,
+                    da ich fand das man sich dadurch besser das Layout des Rasters vorstellen kann.
+
+                    Damit es noch ein bisschen ansprechender aussieht habe ich jedem div eine auf und ab Animation
+                    gegeben und einem box Shadow.
+                </p>
+            </div>
+
+            <div class="ExperimentDescription" id="Description3">
+                <h2>Überlegung</h2>
+                <p>
+                    Das Thema fürs 3. Experiment war einen Text immer unleserlicher zu machen.
+                    Dafür habe ich mich entschieden Zitate aus meinem lieblings Manga Berserk zu nehmen und
+                    diese langsam verschwinden zu lassen. Die verschwundenen Zitate kommen ins vom Manga bekannten
+                    Brandmahl vom Hauptcharakter. Nach und nach wird das Symbol deutlicher und der Text ist immer
+                    wenihger zu lesen.
+                </p>
+                <h2>Umsetzung</h2>
+                <p>
+                    Für die Umsetzung habe ich erstmal Zitate vom Manga gesammelt und diese in einer Datenbank
+                    gespeichert.
+                    Diese habe ich dann per Node.js und Javascriüt ausgelesen und per Nunjuck auf die Website gerendert.
+                    Für das Berserk Symbol habe ich eine Vektorgrafik verwendet, die ich in Illustrator erstellt habe.
+                    Per Jquery habe ich dann auf das Scrollwheel zugegriffen und immer eine ID von den Zitaten genommen
+                    und diese
+                    der Vektorgrafik zugewiesen.
+                </p>
+                <h2>Website ausführen</h2>
+                <p>Da ich nicht wusste wie ich meine alter Struktur von Node.js mit Sql vom Experiment mit der neuen
+                    Server Struktur von der Hausarbeit so schnell verbinden kann.
+                    Kann man Experimemt 3 Leider nur mit dem in der OrdnerStruktur von Experiment 3 enthaltenenen
+                    Server.js Script starten.
+                </p>
+            </div>
+            <div class="ExperimentDescription" id="Description4">
+                <h2>Überlegung</h2>
+                <p>
+                    Beim letzten Experiment sollten wir eine Portfolio Seite machen die möglichst verschiedene Seiten
+                    zeigt.
+                    Für diese Aufgabe habe ich mich von einer Portfolio Seite inspirieren lassen die uns einmal in der
+                    Vorlesung vorgestellt wurde.
+                    Dort wurde mit der größe der FensterBreite immer jeweils das aussehen der vorgestellten Person
+                    verändert und mit anderen Sätzen sowie Animationen begleitet.
+                    Sowas ähnliches wollte ich auch machen und habe erstmal zufällig spontan ein paar witzige Bilder von
+                    mir am Hafen gemacht,
+                    wo ich dachte das die in bestimmten Situationen gut passen würden.
+                </p>
+                <h2>Umsetzung</h2>
+                <p>
+                    Der Aufbau der Webseite ist sehr Simpel die Bilder habe ich per Media Querie gewächselt und ich
+                    hbabe die verschiedenen Positionen der Beschreibungstexte por Bildwechsel verändert.
+                    Damit es etwas flüssiger aussieht habe ich Noch ein paar Trasisions eingebunden.
+                    Manche Texte habe ich mit einer Vektorgrafik wie einen Blitz verbunden, wo ich den Text dann anlang
+                    der svg linie platziert habe.
+                </p>
+            </div>
+            <div class="ExperimentDescription" id="Description5">
+
+                <h2>Beschreibung</h2>
+                <p>
+                    Am Anfang des Semesters sollten wir bestimmte Javascript Apis oder CSS funktionen vorstellen, die
+                    uns eventuell im Laufe des Kurses helfen könnten.
+
+                    Ich und Jonas Mumm haben zusammen Processing,Paper.js und Three.js einmal genauer unter die Lupe
+                    genommen und uns einen kleinen Einblick verschafft.
+                </p>
+            </div>
+        </div>
+        <a href="Experiment1/Experiment1.html" class="goToExperiment" id="ExperimentLink">Anschauen</a>
+        <a class="ReturnToCanvas" id="ReturnToCanvas">Zurück</a>
+
+    </div>
+
+    <a class="scroll" href="index.html" id="BackToAboutMe"><span></span>Zurück</a>
+</div>
+
+
+<script src="Scripts/RopeController.js">
+
+</script>
+
+<script src="Scripts/DragDivAndInspectHandler.js">
+
+</script>
+
+
+<script>
+
+
+    $('.ReturnToCanvas').on("click", function () {
+        document.getElementById("curtainLeft").style.transform = "translateX(-100%"
+        document.getElementById("curtainRight").style.transform = "translateX(200%"
+
+        return console.log("isinside")
+    });
+
+
+</script>
+</body>
+</html>

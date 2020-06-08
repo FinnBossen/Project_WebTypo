@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Experiment 1</title>
+
+    <script type="text/javascript" src="paper-full.js"></script>
+    <script type="text/paperscript" canvas="bgCanvas" src="background.js"></script>
+    <script src="grained.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="grid-container" id="container">
+<div class="grained">
+
+    <canvas id="bgCanvas" resize stats hidpi="off" >
+        </canvas>
+
+    <script>
+        var c = document.getElementById("bgCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(20, 20, 150, 100);
+    </script>
+
+    <div class="container" id="first">
+
+
+        <div class="Word" id="FirstWord">
+            <h1 class="wort1">MEERESTECHNIK</h1>
+            <h1 class="wort2">MEERESTECHNIK</h1>
+            <h1 class="wort3">MEERESTECHNIK</h1>
+            <h1 class="wort4">MEERESTECHNIK</h1>
+            <h1 class="wort5">MEERESTECHNIK</h1>
+        </div>
+    </div>
+    <div class="container" id="second">
+        <div class="Word" id="SecondWord" >
+            <h1 class="wort1">SCHIFFFAHRT</h1>
+            <h1 class="wort2">SCHIFFFAHRT</h1>
+            <h1 class="wort3">SCHIFFFAHRT</h1>
+            <h1 class="wort4">SCHIFFFAHRT</h1>
+            <h1 class="wort5">SCHIFFFAHRT</h1>
+        </div>
+    </div>
+    <div class="container" id="third">
+        <div class="Word" id = "ThirdWord">
+            <h1 class="wort1">SCHIFFBAU</h1>
+            <h1 class="wort2">SCHIFFBAU</h1>
+            <h1 class="wort3">SCHIFFBAU</h1>
+            <h1 class="wort4">SCHIFFBAU</h1>
+            <h1 class="wort5">SCHIFFBAU</h1>
+        </div>
+    </div>
+    <div class="container" id="fourth">
+        <div class="Word" id="FourthWord" >
+            <h1 class="wort1">ZULIEFERINDUSTRIE</h1>
+            <h1 class="wort2">ZULIEFERINDUSTRIE</h1>
+            <h1 class="wort3">ZULIEFERINDUSTRIE</h1>
+            <h1 class="wort4">ZULIEFERINDUSTRIE</h1>
+            <h1 class="wort5">ZULIEFERINDUSTRIE</h1>
+        </div>
+    </div>
+
+    <div class="container"  id="fifth">
+        <div class="Word" id="FifthWord">
+            <h1 class="wort1">OFFSHORE</h1>
+            <h1 class="wort2">OFFSHORE</h1>
+            <h1 class="wort3">OFFSHORE</h1>
+            <h1 class="wort4">OFFSHORE</h1>
+            <h1 class="wort5">OFFSHORE</h1>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

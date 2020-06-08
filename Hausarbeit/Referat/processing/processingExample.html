@@ -1,0 +1,43 @@
+<html>
+<title>Processing</title>
+
+    <head>
+        <link rel="stylesheet" href="../style.css">
+
+    </head>
+    <body>
+
+
+        <script src="processing.js"></script> 
+        <canvas data-processing-sources="mouseInput/mouseInput.pde"></canvas>
+
+
+<h1>Processing</h1>
+<ul class="cooleListe">
+<li>
+    Processing.js funktioniert mit in Java geschriebenem Processing Code.
+</li>
+<li>
+    Ermöglicht Anwendungen mit Fokus auf Userinteraktionen durch Maus und Keyboard.
+</li>
+<li>
+        Großteil der Features von herkömlichem Processing.
+    </li>
+    <li>Einschränkungen gegenüber normalem Processing besonders in Rendermodi (WebGL nicht vollständig implementiert!)</li>
+    <li>Import von Java-libraries nicht möglich</li>
+    <li>Probleme mit Mauskoordinaten beim Skalieren des Canvases (<a href="canvasScalled.html">Skaliertes Beispiel</a>)</li>
+    <li>Code aus herkömlichen Processing funktioniert nicht mit Sicherheit auch in Processing.js, Processing.js's eigene Reference Page beachten!</li>
+</ul>
+
+<h2>Nutzung</h2>
+<p>Erstellen von Code in Processing. Hierfür bietet sich zum schnellen Testen das standart Processing IDE an.</p>
+<img src="images/pCode.PNG">
+<p>Einbetten von Processing ins HTML</p>
+<img src="images/implement.PNG">
+<p>Es ist auch möglich ein Processing Projekt aus mehreren .pde Dateien zu importieren:</p>
+<img src="images/multiInport.PNG">
+<div class="alert"><h2>Achtung!</h2><p>Schon beim Laden aus dem lokalen Dateisystem von Processing.js greift die Same-origin Policy! Daher muss Processing.js immer über einen Server ausgeführt/geladen werden.</p></div>
+<h2>Links</h2>
+<a href="http://processingjs.org/exhibition/">Processing.js Beispiele</a>
+</body>
+</html>

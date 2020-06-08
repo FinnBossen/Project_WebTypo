@@ -1,0 +1,25 @@
+{
+  "name": "experimentelleunleserlichkeit",
+  "version": "1.0.0",
+  "description": "Experiment with Quotes from berserk and the symbol from the manga",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Finn Bossen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "express-nunjucks": "^2.2.3",
+    "express-params": "0.0.3",
+    "express-session": "^1.16.1",
+    "express-sessions": "^1.0.6",
+    "jsdom": "^15.1.1",
+    "nunjucks": "^3.2.0",
+    "scroll-events": "^1.1.3",
+    "sqlite3": "^4.0.8",
+    "twig": "^1.13.3"
+  }
+}

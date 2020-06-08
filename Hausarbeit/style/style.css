@@ -1,0 +1,855 @@
+/* CSS for All */
+
+html, body{
+    background-color: blue;
+padding: 0;
+    margin: 0;
+overflow: hidden;
+
+}
+canvas{
+
+    position: fixed;
+    z-index: 100;
+
+
+}
+
+.DokuContainer{
+
+    font-family: Arial;
+    padding: 2em;
+    position: absolute;
+    background: grey;
+left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 60%;
+
+    overflow: auto;
+
+    bottom: 1px;
+}
+
+.description{
+
+    padding-right: 30%;
+}
+
+.name{
+    color: white;
+    font-family: 'Anonymouse Pro', monospace;
+    font-size: 60px;
+    z-index: 100;
+
+
+}
+
+.changingText{
+    top: 40vh;
+    position: absolute;
+    float: left;
+    margin-left: 10vw;
+    z-index: 100;
+    width: 30.8em;
+}
+
+
+.line{
+    margin: 0;
+    position: absolute;
+    font-family: 'Anonymouse Pro', monospace;
+    font-size: 50px;
+    color: white;
+
+    border-right: 4px solid rgba(255,255,255,0.75);
+    z-index: 100;
+
+   float: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#changingShortText{
+    display: none;
+}
+
+#changingShortText1{
+    display: none;
+}
+#changingShortText2{
+    display: none;
+}
+#changingShortText3{
+    display: none;
+}
+#changingShortText4{
+    display: none;
+}
+#changingShortText5{
+    display: none;
+}
+/* TypeWrite Animation */
+.anim-typewriter {
+    -webkit-animation: typewriter 2s steps(20) 100ms 1 normal both,
+    blinkTextCursor 500ms steps(9) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*Rain Animation */
+.rainContainer {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+display: none;
+
+}
+.rain
+{
+    height: 100%;
+    background-image: url(../images/rain.png);
+    animation: rain .3s linear infinite;
+}
+.rain:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    animation: light 4s linear infinite;
+    opacity: 0;
+}
+@keyframes rain
+{
+    0%
+    {
+        background-position: 0% 0%;
+    }
+    100%
+    {
+        background-position: 10% 100%;
+    }
+}
+@keyframes light
+{
+    0%
+    {
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 0;
+    }
+    11%
+    {
+        opacity: 1;
+    }
+    14%
+    {
+        opacity: 0;
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    21%
+    {
+        opacity: 1;
+    }
+    24%
+    {
+        opacity: 0;
+    }
+    1000%
+    {
+        opacity: 0;
+    }
+
+}
+
+/* Über mich Seite CSS */
+
+#MatrixRain{
+    z-index: 10;
+    display: none;
+    position: absolute;
+
+    height: 100%;
+}
+
+
+
+
+#sticky {
+
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+    clip: rect(0, auto, auto, 0);
+    z-index:11;
+}
+
+#Portal{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 2;
+}
+
+#sticky2 {
+
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+    clip: rect(0, auto, auto, 0);
+}
+
+#box1{
+
+    position: relative;
+
+
+    height: 100vh;
+    width: 100%;
+background-color: black;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    z-index: 0;
+
+
+}
+
+#box3{
+
+    position: relative;
+
+
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    z-index: 20;
+
+
+}
+
+#box2{
+
+    position: relative;
+    height: 50vh;
+    width: 100%;
+   background-color: black;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+#description{
+    font-family: arial black;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.cartoonface{
+    position: relative;
+    height: auto;
+    width: 1100px;
+    transform: translateY(-18%) translateX(-35%);
+
+
+
+
+
+}
+
+#DepthPicture{
+    z-index: 15;
+    position: relative;
+    float:right;
+}
+
+@media  only screen and (min-width: 0px) and (max-width: 1352px) {
+    #DepthPicture {
+
+        float: left;
+    }
+}
+
+@media  only screen and (min-width: 0px) and (max-width: 501px) {
+
+    .changingText{
+
+        margin-left: 0;
+
+    }
+}
+
+@media  only screen and (min-width: 1069px) and (max-width: 1353px) {
+
+    .changingText{
+position: relative;
+       float: right;
+        margin-right: 10vw;
+
+    }
+}
+
+
+    .cartoonfaceClass{
+    position: absolute;
+    margin: 0;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    display: inline-block;
+}
+.ScaleSvg{
+    background-color: transparent;
+    margin: 0;
+    margin-right: 46px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)translateX(-23.5%);
+    overflow: hidden;
+    width: 200px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+
+    padding: 0;
+    border: 0;
+}
+
+
+
+#heart{
+    z-index: -100;
+}
+.face{
+    position: relative;
+
+}
+.eyesContainer{
+    position: absolute;
+}
+#eyes{
+display: none;
+    position: absolute;
+z-index: 100;
+    margin-left: 20vw;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+   bottom: 0;
+    transform: translateY(-9%);
+
+
+}
+
+
+.ball {
+    z-index: 50;
+    cx:50; cy:42.6; r:10;
+
+
+}
+
+#eyeinner{
+    z-index: 100;
+    fill: black;
+    r:7;
+}
+
+
+
+
+div .scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    padding-top: 60px;
+    z-index: 100;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+
+}
+div .scroll:hover {
+    opacity: .5;
+    z-index: 100;
+}
+
+
+div .scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+div #scrollUp span{
+    transform: rotate( -225deg);
+    -webkit-transform: rotate( -225deg)
+}
+
+div #scrollUp {
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    left: 2em;
+    transform: translate(0, 0);
+}
+
+div #chooseSide span{
+    transform: rotate( -225deg);
+    -webkit-transform: rotate( -225deg)
+}
+
+div #chooseSide{
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    left: 30%;
+    transform: translate(0, 0);
+}
+
+
+div #DokuRef span{
+    transform: rotate( -225deg);
+    -webkit-transform: rotate( -225deg)
+}
+
+div #DokuRef{
+
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+
+    transform: translate(0, 0);
+}
+
+
+div #zurück span{
+    transform: rotate( -225deg);
+    -webkit-transform: rotate( -225deg)
+}
+
+div #zurück{
+
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+/* Choose What to see CSS */
+.goTo3dStuff{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.goTo2dStuff{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chooseContainer{
+position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.choose2d{
+    position: relative;
+    background-color: greenyellow;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+}
+
+.choose3d{
+    position: relative;
+    background-color: grey;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+}
+
+/* Node Canvas CSS */
+
+.curtain__panel{
+z-index: 100;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    bottom: 0;
+    transition: all 1000ms;
+
+}
+
+.curtain__panel--left {
+    transform: translateX(-100%);
+    background-color: slategrey;
+}
+
+/* Slide the panel to the right out of the container */
+.curtain__panel--right {
+    transform: translateX(200%);
+    background-color: grey;
+    overflow-scrolling: auto;
+}
+
+#NodeCanvasBackground{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 23;
+    pointer-events:none;
+
+}
+
+.NodeCanvas{
+    position: absolute;
+
+    background-image: url(../images/pinboardTexture.jpg);
+    background-repeat:repeat;
+    height: 100vh;
+    width: 100%;
+
+    display: table;
+    background-attachment: fixed;
+    z-index: 20;
+
+}
+
+#InspectExperimentPicture{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pinNode{
+    position:sticky;
+    text-decoration: none;
+    color: #000;
+    background: #ffc;
+    z-index: 22;
+    height: 140px;
+    width: 140px;
+
+    /* Firefox */
+    -moz-box-shadow: 5px 5px 2px #212121;
+    /* Safari+Chrome */
+    -webkit-box-shadow: 5px 5px 2px rgba(33, 33, 33, 0.7);
+    /* Opera */
+    box-shadow: 5px 5px 2px rgba(33, 33, 33, 0.7);
+
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+}
+
+.pin{
+    max-width:40px;
+    height:auto;  position: absolute;
+    left: 50%;
+
+    transform: translate(-50%,-30%);
+}
+
+.ExperimentName{
+    font-family: "Arial Black";
+    font-size: 1em;
+    color: darkred;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.PreviewPictureNode{
+    width: 120px;
+    height: 120px;
+    margin: 0.7em;
+    background-color: red;
+
+}
+
+#firstNode {
+
+left: 70%;
+
+
+}
+
+#secondNode {
+
+    left: 40%;
+
+}
+
+#thirdNode{
+    left: 60%;
+}
+
+#fourthNode{
+    left: 10%;
+}
+#fifthNode{
+    left: 30%;
+}
+
+.pin{
+    z-index: 100;
+    transition: all 1000ms;
+
+}
+
+#inspectZone{
+    z-index: 21;
+    position:absolute;
+    bottom:0;
+
+    float: right;
+    left: 50%;
+    width:30%;
+    height:30%;   /* Height of the footer */
+    border-radius: 25px 25px 0px 0px;
+    border: 3px solid white;
+    background-color: grey;
+    opacity: 0.5;
+}
+#InspectZoneDescription{
+    font-family: "Arial Black";
+ color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.ExperimentNameInspetion{
+    font-family: "Arial Black";
+    color: white;
+    position: relative;
+    text-align: center;
+
+}
+
+#Description{
+    display: none;
+}
+
+#Description2{
+    display: none;
+}
+
+#Description3{
+    display: none;
+}
+
+#Description4{
+    display: none;
+}
+
+#Description5{
+    display: none;
+}
+
+
+.Descriptions{
+    position: relative;
+    padding-left: 3em;
+
+    height: 70vh;
+}
+
+.ExperimentDescription{
+    margin-right: 3em;
+    position: absolute;
+
+}
+
+
+
+.ReturnToCanvas {
+    -moz-box-shadow:inset 32px 1px 24px -2px #57390b;
+    -webkit-box-shadow:inset 32px 1px 24px -2px #57390b;
+    box-shadow:inset 32px 1px 24px -2px #57390b;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #b37d27) );
+    background:-moz-linear-gradient( center top, #fae4bd 5%, #b37d27 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#b37d27');
+    background-color:#fae4bd;
+    -webkit-border-top-left-radius:16px;
+    -moz-border-radius-topleft:16px;
+    border-top-left-radius:16px;
+    -webkit-border-top-right-radius:16px;
+    -moz-border-radius-topright:16px;
+    border-top-right-radius:16px;
+    -webkit-border-bottom-right-radius:16px;
+    -moz-border-radius-bottomright:16px;
+    border-bottom-right-radius:16px;
+    -webkit-border-bottom-left-radius:16px;
+    -moz-border-radius-bottomleft:16px;
+    border-bottom-left-radius:16px;
+    text-indent:0px;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial Black;
+    font-size:16px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:150px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #cc9f52;
+
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 2em;
+}
+
+.ReturnToCanvas:hover {
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b37d27), color-stop(1, #fae4bd) );
+     background:-moz-linear-gradient( center top, #b37d27 5%, #fae4bd 100% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b37d27', endColorstr='#fae4bd');
+     background-color:#b37d27;
+ }
+.ReturnToCanvas:active {
+      position:relative;
+      top:1px;
+
+
+  }
+
+
+.goToExperiment {
+    -moz-box-shadow:inset 32px 1px 24px -2px #57390b;
+    -webkit-box-shadow:inset 32px 1px 24px -2px #57390b;
+    box-shadow:inset 32px 1px 24px -2px #57390b;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #b37d27) );
+    background:-moz-linear-gradient( center top, #fae4bd 5%, #b37d27 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#b37d27');
+    background-color:#fae4bd;
+    -webkit-border-top-left-radius:16px;
+    -moz-border-radius-topleft:16px;
+    border-top-left-radius:16px;
+    -webkit-border-top-right-radius:16px;
+    -moz-border-radius-topright:16px;
+    border-top-right-radius:16px;
+    -webkit-border-bottom-right-radius:16px;
+    -moz-border-radius-bottomright:16px;
+    border-bottom-right-radius:16px;
+    -webkit-border-bottom-left-radius:16px;
+    -moz-border-radius-bottomleft:16px;
+    border-bottom-left-radius:16px;
+    text-indent:0px;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial Black;
+    font-size:16px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:145px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #cc9f52;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 2em;
+}.goToExperiment:hover {
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b37d27), color-stop(1, #fae4bd) );
+     background:-moz-linear-gradient( center top, #b37d27 5%, #fae4bd 100% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b37d27', endColorstr='#fae4bd');
+     background-color:#b37d27;
+ }.goToExperiment:active {
+      position:relative;
+      top:1px;
+  }
+
+#BackToAboutMe{
+    left: 10%;
+    z-index: 90;
+}
+
+.ExperimentDescription p{
+    font-family: Arial;
+}
+.ExperimentDescription h2{
+    font-family: "Arial Black";
+}
+
+
+

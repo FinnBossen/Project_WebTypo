@@ -1,0 +1,15 @@
+{% extends 'Experiment3.html' %}
+
+{% block content %}
+
+    {% for entry in entries %}
+        <div class="Quote">
+
+            <p>{{entry.Text}} </p>
+
+        </div>
+
+
+    {% endfor %}
+
+{%endblock%}

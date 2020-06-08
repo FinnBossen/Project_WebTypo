@@ -1,0 +1,110 @@
+ body{
+     height: 1000vh;
+     width: 100vw;
+     background-color: black;
+ }
+ svg{
+
+     z-index: 100;
+     position: fixed;
+
+     width: 250%; height: 125%;
+     left: 50%;
+     top: 60%;
+     transform: translate(-50%, -50%);
+
+ }
+
+ svg path {
+
+     fill: transparent;
+     fill-opacity: 100%;
+
+ }
+
+.GridContainer{
+    position: fixed;
+    display: flex; /* displays flex-items (children) inline */
+    flex-wrap: wrap; /* enables them to wrap (default: nowrap) */
+    /* 16:9 ratio */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Quote{
+
+    flex: 0 1 auto;    /* enabled (default: 0); can grow/expand beyond 50% of the parent's width */
+    /*flex-basis: 30%; /* initial width set to 50% because none of the items will be less than that, no matter how many of them */
+    border: 1px solid; /* just to see the result better */
+    box-sizing: border-box; /* recommended because of the border; otherwise you'd need to use the CSS calc() function: "flex-basis: calc(50% - 2px);" -2px because of the left and right border, which is 1px each; same applies for margins, if you're going to use them, then you also need to use the calc(), e.g.: calc(x% - twice the defined margin) */
+
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 1000ms linear;
+    -moz-transition: all 1000ms linear;
+    -ms-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+
+
+
+
+/*
+    flex: 0 1 auto;    /* enabled (default: 0); can grow/expand beyond 50% of the parent's width */
+    /*flex-basis: 30%; /* initial width set to 50% because none of the items will be less than that, no matter how many of them */
+   /* border: 1px solid; /* just to see the result better */
+  /*  box-sizing: border-box; /* recommended because of the border; otherwise you'd need to use the CSS calc() function: "flex-basis: calc(50% - 2px);" -2px because of the left and right border, which is 1px each; same applies for margins, if you're going to use them, then you also need to use the calc(), e.g.: calc(x% - twice the defined margin) */
+   /* background: #eff0f1;
+
+    */
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    animation: float 6s ease-in-out infinite;
+    color: darkred;
+    font-size: 2vmin;
+
+}
+
+
+
+ .hidden {
+
+     -moz-transform: scale(1.10);
+     -webkit-transform: scale(1.10);
+     -o-transform: scale(1.10);
+     -ms-transform: scale(1.10);
+     transform: scale(1.10);
+
+ }
+
+
+
+
+
+ @-webkit-keyframes float {
+     0% {
+       /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+         -webkit-transform: translatey(0px);
+         transform: translatey(0px);
+     }
+     50% {
+       /*  box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+         -webkit-transform: translatey(-4px);
+         transform: translatey(-4px);
+     }
+     100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+         -webkit-transform: translatey(0px);
+         transform: translatey(0px);
+     }
+ }
+
+
+
+

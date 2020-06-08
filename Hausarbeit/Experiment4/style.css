@@ -1,0 +1,859 @@
+body{
+margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+
+    width: 100%;
+    background: #55d6aa;
+    transition: all 200ms linear;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.name{
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.description{
+    transition: all 200ms linear;
+
+}
+
+.firstName{
+    transition: all 200ms linear;
+}
+.LiveLesson{
+    transition: all 200ms linear;
+
+}
+
+.ArbeitsProbe{
+    transition: all 200ms linear;
+
+}
+
+
+
+
+.fullScreenPicture{
+
+
+    visibility: hidden;
+
+}
+svg path{
+    fill: transparent;
+    fill-opacity: 100%;
+}
+
+svg polyline{
+    fill: transparent;
+    fill-opacity: 100%;
+}
+
+
+
+.container{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fullscreen{
+height: 100%;
+
+    position: relative;
+
+}
+
+.tspan{
+    transform : scale(+1,-1);
+}
+
+.description{
+    visibility: hidden;
+
+
+}
+
+@media only screen and (max-width: 2000px) {
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+
+        width: 2000px;
+        height: auto;
+        z-index: 10;
+transform: translateY(-10%);
+        visibility: visible;
+
+    }
+
+    .description{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+font-size: 18pt;
+
+        transform: translateX(920px) translateY(700px) ;
+         width: 200px;
+color: gainsboro;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    .firstName{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+        font-size: 18pt;
+
+        transform: translateX(620px) translateY(-700px)  scale(-1,-1) ;
+        width: 800px;
+
+        visibility: visible;
+    }
+    .LiveLesson{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+        font-size: 25pt;
+        font-weight: bold;
+        transform: translateX(200px) translateY(600px) rotateZ(50deg);
+        width: 550px;
+
+        color: black;
+        visibility: visible;
+
+    }
+
+    .ArbeitsProbe{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+        font-size: 25pt;
+        font-weight: bold;
+        transform: translateX(1300px) translateY(400px) rotateZ(-50deg);
+        width: 550px;
+
+        color: black;
+
+        visibility: visible;
+
+    }
+
+
+    .lookingUpPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+
+        visibility: hidden;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+        visibility: hidden;
+    }
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+
+        visibility: hidden;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+
+        visibility: hidden;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1667px) {
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 1667px;
+        height: auto;
+        z-index: 20;
+        visibility: hidden;
+
+    }
+
+    .blitz1{
+        z-index: 110;
+
+        position: fixed;
+        display: inline-block;
+        font-size: 40pt;
+        width: 1980px;
+        transform: translateX(-500px) scale(-1,-1);
+        color: yellow;
+       visibility: visible;
+        animation: electricity 1s ease-in-out infinite;
+
+    }
+
+    .blitz2{
+        z-index: 110;
+        display: inline-block;
+        position: fixed;
+        font-size: 40pt;
+        transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+        width: 1980px;
+        color: yellow;
+        visibility: visible;
+        animation: electricity1 1s ease-in-out infinite;
+
+    }
+
+
+    .description{
+        z-index: 101;
+
+        position: absolute;
+
+        visibility: hidden;
+
+
+    }
+    .LiveLesson{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+        font-size: 25pt;
+        font-weight: bold;
+        transform: translateX(200px) translateY(600px) rotateZ(50deg);
+        width: 550px;
+
+        color: black;
+        visibility: hidden;
+    }
+
+    .ArbeitsProbe{
+        z-index: 101;
+        margin: 0;
+        position: absolute;
+        font-size: 25pt;
+        font-weight: bold;
+        transform: translateX(200px) translateY(650px) rotateZ(40deg);
+        width: 550px;
+
+        color: grey;
+        visibility: visible;
+    }
+
+    .lookingUpPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 33;
+        visibility: hidden;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 1667px;
+        height: auto;
+        transform: translateY(-15%);
+        z-index: 20;
+        visibility: visible;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1334px) {
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        visibility: hidden;
+
+    }
+
+    .lookingUpPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 33;
+        visibility: hidden;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 1334px;
+        height: auto;
+        transform: translateY(-3%);
+        z-index: 20;
+        visibility:visible;
+    }
+
+    .firstName{
+        transform: translateX(310px)translateY(-350px)  scale(-1,-1) ;;
+        color: grey;
+    }
+
+    .ArbeitsProbe{
+
+        margin-top: 60vh;
+        left: 20px;
+        transform: translateX(0%);
+    }
+
+    .description{
+
+        margin-top: 30vh;
+        left: 20px;
+        transform: translateX(0%);
+        visibility: visible;
+    }
+
+    .LiveLesson{
+
+        margin-top: 45vh;
+        left: 20px;
+        transform: translateX(0%);
+        visibility: visible;
+    }
+
+
+    header{
+        position: fixed;
+        z-index: 100;
+        height: 100vh;
+        width: 570px;
+        background: #55d6aa;
+    }
+
+
+
+    .blitz1{
+        z-index: 110;
+
+        position: fixed;
+        display: inline-block;
+        font-size: 40pt;
+        width: 1980px;
+        transform: translateX(-500px) scale(-1,-1);
+        color: yellow;
+        visibility: hidden;
+
+
+    }
+
+    .blitz2{
+        z-index: 110;
+        display: inline-block;
+        position: fixed;
+        font-size: 40pt;
+        transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+        width: 1980px;
+        color: yellow;
+        visibility: hidden;
+
+    }
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1001px) {
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        visibility: hidden;
+
+    }
+
+    header{
+        position: fixed;
+        z-index: 100;
+        height: 100vh;
+        width: 350px;
+        background: #55d6aa;
+    }
+
+    .ArbeitsProbe{
+
+        margin-top: 60vh;
+        left: 20px;
+        transform: rotateZ(-90deg);
+    }
+    .firstName{
+        transform: translateX(150px)translateY(-700px)  scale(-1,-1) ;;
+        color: grey;
+    }
+    .description{
+
+        margin-top: 65vh;
+
+        transform: rotateZ(-90deg);
+        visibility: visible;
+    }
+
+
+    .LiveLesson{
+
+        margin-top: 50vh;
+
+        transform: rotateZ(-90deg)translateY(-60px);
+        visibility: visible;
+    }
+    .lookingUpPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 33;
+        visibility: hidden;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility:hidden;
+    }
+
+
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 1334px;
+        height: auto;
+        transform: translateX(-18%);
+        z-index: 20;
+        visibility: visible;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        visibility: hidden;
+
+    }
+
+    header{
+        position: relative;
+        z-index: 100;
+        height: 100vh;
+        float:  right;
+        width: 200px;
+        background: #55d6aa;
+    }
+
+    .firstName{
+
+        color: grey;
+        visibility: hidden;
+    }
+
+
+    .lookingUpPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 33;
+        visibility: hidden;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility:hidden;
+    }
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 1334px;
+        height: auto;
+
+        z-index: 20;
+        transform: translateX(-30%);
+        visibility: visible;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+
+
+    header{
+        position: fixed;
+        z-index: 100;
+height: auto;
+        width: 100%;
+        background: #55d6aa;
+    }
+
+    .fullScreenPicture{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        visibility: hidden;
+
+    }
+
+    .firstName{
+        transform: translateX(0px) scale(-1,-1) ;
+    }
+    .ArbeitsProbe{
+
+        margin-top: 60vh;
+        left: 20px;
+        transform: translateX(0%);
+    }
+
+    .description{
+
+        margin-top: 30vh;
+        left: 20px;
+        transform: translateX(0%);
+        visibility: visible;
+    }
+
+    .LiveLesson{
+
+        margin-top: 45vh;
+        left: 20px;
+        transform: translateX(0%);
+        visibility: visible;
+    }
+
+
+    .lookingUpPicture{
+
+        position: absolute;
+        top:0; left:0;
+     width: 1334px;
+        height: auto;
+        transform: translateX(-27%) translateY(10%);
+
+        z-index: 33;
+        visibility: visible;
+    }
+
+    .leaningLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility:hidden;
+    }
+
+    .fingerLeft{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+
+    .lookingRightWideHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+
+    .lookingLeftLightingHands{
+        position: absolute;
+        top:0; left:0;
+        width: 100%;
+        height: auto;
+
+        z-index: 20;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 910px) {
+    nav {
+        float: left;
+    }
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 26px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+
+     color: #000;
+
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+
+    top: 0;
+    width: 0%;
+
+        transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+@-webkit-keyframes electricity {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        -webkit-transform: translateX(-500px) scale(-1,-1);
+        transform: translateX(-500px) scale(-1,-1);
+
+
+    }
+    50% {
+        /*  box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+        -webkit-transform: translateX(-506px) scale(-1,-1);
+        transform: translateX(-506px) scale(-1,-1);
+
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        -webkit-transform: translateX(-500px) scale(-1,-1);
+        transform: translateX(-500px) scale(-1,-1);
+
+    }
+}
+
+@-webkit-keyframes electricity1 {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        -webkit-transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+        transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+
+
+    }
+    50% {
+        /*  box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+        -webkit-transform: translateX(-676px) translateY(-350px) scale(-1,-1);
+        transform: translateX(-676px) translateY(-350px) scale(-1,-1);
+
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        -webkit-transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+        transform: translateX(-670px) translateY(-350px) scale(-1,-1);
+
+    }
+}
+
+@-webkit-keyframes fadeonresize { from { opacity: 0; } to { opacity: 1; }}
